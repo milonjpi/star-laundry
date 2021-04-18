@@ -1,7 +1,7 @@
 import React from 'react';
 
 const OrderListBody = ({orList}) => {
-    const { _id, displayName, email, orderInfo, orderStatus } = orList;
+    const { _id, displayName, email, orderInfo} = orList;
 const handleStatus = (id, e) => {
       const newStatus = e.target.value;
       const statusInfo = { id, newStatus};
