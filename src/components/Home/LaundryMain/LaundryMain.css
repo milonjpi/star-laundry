@@ -1,0 +1,9 @@
+.main-container{
+    background: url("../../../images/main-bg.png");
+    background-size: cover;
+    height: 558px;
+    width: 100%;
+}
+.featureImg{
+    width: 60px;
+}

@@ -1,0 +1,32 @@
+.adminHeight{
+    height: 80vh;
+}
+label{
+    font-weight: 500;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.table td, .table th {
+  border-top: 0;
+}
+.custom-edit{
+  color:green;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.custom-delete{
+  color:red;
+  font-size: 20px;
+}
+
+.width-150{
+    width: 150px;
+}

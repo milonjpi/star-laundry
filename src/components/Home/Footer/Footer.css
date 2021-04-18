@@ -1,0 +1,8 @@
+.footer-container{
+    background: #414141;
+    color: white;
+}
+.ulListStyle{
+    list-style-type: none;
+    padding-inline-start: 0;
+}

@@ -1,0 +1,12 @@
+.orderListImg{
+    border-radius: 40%;
+}
+.orderImgDiv{
+    width: 60px;
+    height: 60px;  
+}
+.orderStatus{
+    width: 80px;
+    background-color: orange;
+    border-radius: 5px;
+}
