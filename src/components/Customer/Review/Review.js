@@ -14,7 +14,7 @@ const Review = () => {
         reviewerName: data.reviewer,
         reviewDescription: data.reviewDescription
     }
-    axios.post('http://localhost:5058/addreview', reviewData)
+    axios.post('https://sheltered-tor-88108.herokuapp.com/addreview', reviewData)
       .then(res => {
         if(res){
             alert("Review Submitted Successfully");

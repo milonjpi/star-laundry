@@ -7,7 +7,7 @@ const OrderingList = () => {
   const {email} = loggedInUser;
   const [orders, setOrders] = useState([]);
   useEffect( () => {
-    fetch('http://localhost:5058/orders?email='+email)
+    fetch('https://sheltered-tor-88108.herokuapp.com/orders?email='+email)
     .then(res => res.json())
     .then(data => setOrders(data))
   },[email])

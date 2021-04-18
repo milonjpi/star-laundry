@@ -10,7 +10,7 @@ const Dashboard = () => {
     const [isAdmin, setIsAdmin] = useState(false);
 
     const adminData = {adminEmail : loggedInUser.email};
-    axios.post('http://localhost:5058/isAdmin', adminData)
+    axios.post('https://sheltered-tor-88108.herokuapp.com/isAdmin', adminData)
     .then(res => setIsAdmin(res.data))
     
 

@@ -6,12 +6,13 @@ import axios from "axios";
 
 const MakeAdmin = () => {
   const { register, handleSubmit } = useForm();
-  const onSubmit = data => {
+  const onSubmit = (data, e) => {
     const adminData = {adminEmail : data.makeAdmin};
-    axios.post('http://localhost:5058/makeAdmin', adminData)
+    axios.post('https://sheltered-tor-88108.herokuapp.com/makeAdmin', adminData)
       .then(res => {
         if(res){
-            console.log("Make Admin Successfully")
+            alert("Make Admin Successfully");
+            e.target.reset();
         }
       })
       .catch(err => {

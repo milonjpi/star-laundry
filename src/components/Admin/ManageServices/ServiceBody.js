@@ -5,7 +5,7 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 const ServiceBody = ({ srv }) => {
   const { _id, serviceTitle, serviceDescription, serviceCost } = srv;
   const handleDelete = (e, id) => {
-    fetch(`http://localhost:5058/deleteService/${id}`, {
+    fetch(`https://sheltered-tor-88108.herokuapp.com/deleteService/${id}`, {
       method: 'DELETE'
     })
     .then(res => res.json())

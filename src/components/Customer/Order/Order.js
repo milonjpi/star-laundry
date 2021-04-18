@@ -15,7 +15,7 @@ const Order = () => {
   const history = useHistory();
 
   useEffect(() => {
-    fetch(`http://localhost:5058/order/${id}`)
+    fetch(`https://sheltered-tor-88108.herokuapp.com/order/${id}`)
       .then((res) => res.json())
       .then((data) => setOrderProduct(data[0]));
   }, [id]);
@@ -30,7 +30,7 @@ const Order = () => {
       orderTime: new Date(),
     };
     axios
-      .post("http://localhost:5058/addorder", orderDetails)
+      .post("https://sheltered-tor-88108.herokuapp.com/addorder", orderDetails)
       .then((res) => {
         if (res) {
           alert("Your order placed successfully");

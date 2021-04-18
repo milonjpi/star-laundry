@@ -14,7 +14,7 @@ const AddService = () => {
             serviceCost: data.serviceCost,
             imageURL: imageURL
         }
-        axios.post('http://localhost:5058/addService', serviceData)
+        axios.post('https://sheltered-tor-88108.herokuapp.com/addService', serviceData)
           .then(res => {
             if(res){
                 alert("A Service added Successfully");
